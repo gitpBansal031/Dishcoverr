@@ -1,0 +1,183 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(226, 201, 104);
+    overflow-x: hidden;
+}
+
+/* <--------------Header--------------> */
+
+.headerDiv {
+    height: 100px;
+    width: 1533px;
+    background-color: rgb(107, 43, 43);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px solid black;
+}
+
+.headerHeading {
+    color: rgb(236, 122, 29);
+    font-size: 3rem;
+    margin-right: 800px;
+    margin-left: 20px;
+}
+
+.headerInput {
+    height: 40px;
+    width: 300px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+
+.headerButton {
+    height: 40px;
+    width: 100px;
+    color: white;
+    background-color: rgb(232, 114, 74);
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 8px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.headerButton:hover,
+.foodBtn:hover,
+.recipeBtn:hover {
+    background-color: rgb(187, 83, 49);
+}
+
+/* <----------------Main Body---------------> */
+
+.main {
+    padding: 25px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1533px;
+}
+
+.mainDiv {
+    width: 1533px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(57, 54, 54);
+}
+
+/* <----------------Recipe Card-------------> */
+.card {
+    height: 450px;
+    width: 400px;
+    background-color: white;
+    border: 1 px solid black;
+    border-radius: 10px;
+    margin: 20px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+/* <-----------------Recipe Card items-----------> */
+.foodImage {
+    height: 300px;
+    width: 400px;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.foodName {
+    color: rgb(44, 36, 31);
+    text-align: center;
+    overflow-y: hidden;
+}
+
+.foodCategory,
+.foodArea {
+    color: rgb(73, 59, 50);
+    text-align: center;
+}
+
+.foodBtn {
+    margin: 5px 0px 0px 125px;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    background-color: rgb(131, 92, 69);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* <--------------Recipe Details pop-up window-------------> */
+
+.recipe {
+    padding: 25px;
+    height: 400px;
+    width: 500px;
+    background: linear-gradient(rgb(179, 162, 162), rgb(201, 168, 119), rgb(213, 206, 206), rgb(201, 168, 119));
+    position: fixed;
+    top: 200px;
+    border-radius: 10px;
+    overflow-y: scroll;
+    box-shadow: 10px 10px 50px black;
+}
+
+.recipeBtn {
+    height: 25px;
+    width: 25px;
+    margin-left: 450px;
+    background-color: rgb(214, 101, 64);
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.recipeName {
+    font-size: 2.2rem;
+    color: black;
+    text-align: center;
+    overflow-y: hidden;
+    margin-bottom: 5px;
+}
+
+.recipeIngredients {
+    font-size: 1.5rem;
+    color: rgb(45, 40, 40);
+    text-align: center;
+    text-decoration-line: underline;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.recipeList {
+    font-size: 1.15rem;
+    color: rgb(34, 32, 32);
+    font-weight: 600;
+    margin: 15px;
+}
+
+.recipeItem {
+    margin-bottom: 7px;
+}
+
+.recipeLink {
+    font-size: 1.15rem;
+    word-spacing: 2px;
+    font-weight: 700;
+    margin: 5px 5px 5px 15px;
+}
